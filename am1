@@ -22,17 +22,14 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.redAccent,
-          leading: Icon(Icons.menu,color: Colors.white),
-          title: Text("Flutter App",style: TextStyle(color: Colors.white)),
-        ),
+        backgroundColor: Colors.black,
         body: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text("Red & White Group of Institutes",style: TextStyle(color: Colors.redAccent,fontWeight: FontWeight.bold,fontSize: 20)),
-              Text("One Step in Changing Education Chain...",style: TextStyle(color: Colors.redAccent,fontWeight: FontWeight.bold,fontSize: 20)),
+              Text("Hello",style: TextStyle(color: Colors.red,fontSize: 30,fontWeight: FontWeight.bold,decoration: TextDecoration.underline,decorationStyle: TextDecorationStyle.double,)),
+              Text("Dart",style: TextStyle(color: Colors.red,fontSize: 30,fontWeight: FontWeight.bold,decoration: TextDecoration.underline,decorationStyle: TextDecorationStyle.double)),
+              Text("Flutter",style: TextStyle(color: Colors.red,fontSize: 30,fontWeight: FontWeight.bold,decoration: TextDecoration.underline,decorationStyle: TextDecorationStyle.double)),
             ],
           ),
         ),
